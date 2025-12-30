@@ -24,7 +24,7 @@ So the solution is basically UART + PWM + logic gates.
 This is the high level block diagram of the system (same one from my report). It was made using paint.net and LTSpice:
 
 <p align="center">
-  <img src="docs/images/project_diagram.pngg"><br>
+  <img src="docs/images/project_diagram.png"><br>
 </p>
 
 This is the photo of the project built on a breadboard:
