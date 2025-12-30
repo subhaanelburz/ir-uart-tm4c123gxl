@@ -20,10 +20,18 @@ So the solution is basically UART + PWM + logic gates.
 5. That signal drives a 2N3904 transistor circuit that powers the IR333A from 5 V.
 6. TSOP134 output goes to PE0 (UART7 RX). A UART RX interrupt collects bytes until the terminator and prints the recovered string over UART0.
 
-## Project overview diagram
+## Project Diagram + Photos
 This is the high level block diagram of the system (same one from my report). It was made using LTSpice and paint.net.
 
-![Project overview diagram](docs/images/project_diagram.png)
+![Project Diagram](docs/images/project_diagram.png)
+
+This is the photo of the project built on a breadboard
+
+![Breadboard Photo](docs/images/breadboard.jpg)
+
+This is the final, soldered version of the project
+
+![Soldered Photo](docs/images/soldered.jpg)
 
 ## Pins used
 - UART0 RX/TX: PA0 / PA1 (PC terminal)
