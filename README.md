@@ -16,6 +16,31 @@ So the solution is basically UART + PWM + logic gates.
 1. PWM on PB6 generates a 38 kHz signal.
 2. UART7 TX on PE1 sends the data (300 8E1).
 3. The UART7 TX signal is inverted (TSOP134 output is active low / default high).
-4. The inverted UART signal is ANDed with the 38 kHz PWM so the IR receiver can receive the data properly.
+4. The inverted UART signal is ANDed with the 38 kHz PWM so the IR receiver can read the data.
 5. That signal drives a 2N3904 transistor circuit that powers the IR333A from 5 V.
 6. TSOP134 output goes to PE0 (UART7 RX). A UART RX interrupt collects bytes until the terminator and prints the recovered string over UART0.
+
+## Project overview diagram
+This is the high level block diagram of the system (same one from my report).
+
+![Project overview diagram](docs/images/project_diagram.png)
+
+## Pins used
+- UART0 RX/TX: PA0 / PA1 (PC terminal)
+- UART7 RX/TX: PE0 / PE1 (IR data)
+- PWM (38 kHz): PB6
+
+## Hardware used
+- 2x TM4C123GXL LaunchPad
+- IR333A IR LED + TSOP134 receiver
+- 74HC04 (NOT) + 74HC08 (AND)
+- 2N3904 NPN transistor
+- Resistors (see circuit report)
+
+## Testing notes
+- Verified UART7 first using a direct loopback (PE1 to PE0) to confirm the RX interrupt logic worked
+- Verified the 38 kHz PWM and the final LED drive signal on the scope
+- Built on breadboard first, then finalized on perfboard
+
+## Docs
+Project reports, diagrams, and the datasheets are in `docs/`.
