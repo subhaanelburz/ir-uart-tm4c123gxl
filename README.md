@@ -27,7 +27,7 @@ This is the high level block diagram of the system (same one from my report). It
 
 This is the photo of the project built on a breadboard
 
-![Breadboard Photo](docs/images/breadboard.jpg)
+<img src="docs/images/breadboard.jpg" width="700">
 
 This is the final, soldered version of the project
 
