@@ -27,11 +27,17 @@ This is the high level block diagram of the system (same one from my report). It
 
 This is the photo of the project built on a breadboard
 
-<img src="docs/images/breadboard.jpg" width="700">
+<p align="center">
+  <img src="docs/images/breadboard.jpg" width="600"><br>
+  <b>Breadboard build</b>
+</p>
 
 This is the final, soldered version of the project
 
-![Soldered Photo](docs/images/soldered.jpg)
+<p align="center">
+  <img src="docs/images/soldered.jpg" width="600"><br>
+  <b>Soldered build</b>
+</p>
 
 ## Pins used
 - UART0 RX/TX: PA0 / PA1 (PC terminal)
