@@ -21,22 +21,22 @@ So the solution is basically UART + PWM + logic gates.
 6. TSOP134 output goes to PE0 (UART7 RX). A UART RX interrupt collects bytes until the terminator and prints the recovered string over UART0.
 
 ## Project Diagram + Photos
-This is the high level block diagram of the system (same one from my report). It was made using LTSpice and paint.net.
+This is the high level block diagram of the system (same one from my report). It was made using paint.net and LTSpice:
 
-![Project Diagram](docs/images/project_diagram.png)
+<p align="center">
+  <img src="docs/images/project_diagram.pngg"><br>
+</p>
 
-This is the photo of the project built on a breadboard
+This is the photo of the project built on a breadboard:
 
 <p align="center">
   <img src="docs/images/breadboard.jpg" width="600"><br>
-  <b>Breadboard build</b>
 </p>
 
-This is the final, soldered version of the project
+This is the final, soldered version of the project:
 
 <p align="center">
   <img src="docs/images/soldered.jpg" width="600"><br>
-  <b>Soldered build</b>
 </p>
 
 ## Pins used
